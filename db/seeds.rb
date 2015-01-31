@@ -2,7 +2,7 @@ cake = DessertType.create(name:"CAKE")
 ice_cream = DessertType.create(name:"ICE-CREAM") 
 choco = DessertType.create(name:"CHOCOLATES") 
 
-Dessert.create(name:"BLACK-FOREST", dessert_type: cake)
+Dessert.create(name:"Black Forest", dessert_type: cake)
 Dessert.create(name:"Angel cake", dessert_type: cake)
 Dessert.create(name:"Apple cake", dessert_type: cake)
 Dessert.create(name:"Babka cake", dessert_type: cake)

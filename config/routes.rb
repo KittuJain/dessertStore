@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   root 'dessert_types#index'
 
-  # The priority is based upon order of creation: first created -> highest priority.
+  # The prsiority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"

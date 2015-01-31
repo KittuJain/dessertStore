@@ -1,11 +1,19 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
- 
-Dessert.create(name:'Cream Cake',region:'India',veg:'TRUE',dessert_type: DessertType.create(name:"CAKE"))
-Dessert.create(name:'Vanilla',region:'Italy',veg:'TRUE',dessert_type: DessertType.create(name:"ICE-CREAM"))
-Dessert.create(name:'Dark Chocolate',region:'Swiss',veg:'TRUE', dessert_type: DessertType.create(name:"CHOCOLATES") )
+cake = DessertType.create(name:"CAKE") 
+ice_cream = DessertType.create(name:"ICE-CREAM") 
+choco = DessertType.create(name:"CHOCOLATES") 
+
+Dessert.create(name:"BLACK-FOREST", dessert_type: cake)
+Dessert.create(name:"Angel cake", dessert_type: cake)
+Dessert.create(name:"Apple cake", dessert_type: cake)
+Dessert.create(name:"Babka cake", dessert_type: cake)
+Dessert.create(name:"Cheesecake", dessert_type: cake)
+Dessert.create(name:"Grape ice cream", dessert_type: ice_cream)
+Dessert.create(name:"Halva ice cream", dessert_type: ice_cream)
+Dessert.create(name:"Black and Tan", dessert_type: ice_cream)
+Dessert.create(name:"Chocolate ice cream", dessert_type: ice_cream)
+Dessert.create(name:"Cookies and Cream", dessert_type: ice_cream)
+Dessert.create(name:"Banana Chocolate", dessert_type:  choco)
+Dessert.create(name:"Black Pearl Bar", dessert_type:  choco)
+Dessert.create(name:" Lavender truffles", dessert_type:  choco)
+Dessert.create(name:"Naga Bar", dessert_type:  choco)
+Dessert.create(name:"Mo’s Bacon Bar", dessert_type:  choco)

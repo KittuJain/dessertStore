@@ -1,2 +1,8 @@
 <h1>DessertTypes#index</h1>
 <p>Find me in app/views/dessert_types/index.html.erb</p>
+<p> Types Of Desserts</p>
+
+<% @dessert_types.each do |dessert_type| %> 
+</br>
+<%= dessert_type.name %> 
+<%end %>
